@@ -20,15 +20,13 @@ body {
 }
 
 h1 {
-    font-size: 60px !important;
+    font-size: 55px !important;
 }
 #banner-wraper {
     width: 100%;
     height: 500px;
 }
-h2 {
 
-}
 a {
   text-decoration: none;
 }
@@ -49,7 +47,7 @@ a {
     z-index: 1;
 }
 #banner-desc {
-    width: 553px;
+    max-width: 553px;
     text-align: center;
     /* background-color: blue; */
     display: flex;
@@ -65,10 +63,23 @@ a {
 nav {
     width: 100%;
     position: fixed !important;
-    padding-top:23px !important;
-    padding-bottom: 23px !important;
+    padding: 4px 50px !important;
     border-bottom: 1px solid rgb(245, 241, 241);
-    z-index: 1;
+    z-index: 2;
+}
+.navbar-toggler {
+  font-size: 13px !important;
+  padding: .20rem .5rem !important;
+}
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.navbar-nav {
+  padding-right: 65px !important;
+}
+#myNav-bar {
+  display: flex;
+  justify-content: space-between;
 }
 #banner-btns {
     display: flex;
@@ -81,16 +92,18 @@ nav {
     cursor: pointer;
     /* color: #282D51; */
     color: #fff;
-    font-weight: 500;
+    font-weight: 100;
+    border-radius: 5px;
 }
 
 
 .getQuote-link {
-    padding:7px 23px;
+    padding:8px 23px;
     /* background-color:#FACE7D; */
     background-color: #1464AC;
-    font-weight: 500;
+    font-weight: 100;
     cursor: pointer;
+    border-radius: 5px;
     
 }
 .getQuote-link a {
@@ -116,12 +129,13 @@ a:hover {
 }
 #services-type-block {
     display: flex;
-    width: 50%;
-    height: 183px;
+    max-width: 600px;
+    /* height: 183px; */
     margin: 0 auto;
     margin-top: 30px;
     justify-content: space-between;
     z-index: 1000;
+    /* background-color: pink; */
 }
 .insurance-type {
     width: 32%;
@@ -136,7 +150,7 @@ a:hover {
     color: #0B56A8;
     font-weight: 700;
     padding-top: 15px;
-    cursor: pointer;
+
 }
 #seeking-content {
     background-color: #EBF1F4;
@@ -154,12 +168,34 @@ a:hover {
     padding-bottom: 10px;
 }
 #insurance-carasoul {
-    margin-top: 45px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 80px;
 }
 #insurance-carasoul h2 {
     color: #1D4A7C;
     text-align: center;
     padding-bottom: 20px;
+}
+#why-choose {
+  display: flex;
+  margin-top: 80px;
+}
+#why-choose-img {
+  width: 50%;
+  background-image: url("image/whyChoose.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+#whyChoose-desc {
+  width: 50%;
+  background-color: #EBF1F4;
+  text-align: center;
+  color: #1D4A7C;
+  line-height: 1.7;
+  padding: 80px 20px;
+  margin-left: 15px;
 }
 
 /* insurance companies minii carasoul */
@@ -255,14 +291,61 @@ a:hover {
 
 
 @media screen and (max-width: 900px) {
-  .carousel img{
+  /* .carousel img{
     width: calc(100% / 2);
+  } */
+  #seeking-content {
+    padding:60px 70px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .carousel img{
+  h1 {
+    font-size: 34px !important;
+    
+  }
+  h2 {
+    font-size: 25px !important;
+  }
+  /* .carousel img{
     width: 100%;
+  } */
+  #services-type-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+      
+  }
+  nav {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .insurance-type {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #banner-desc {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #seeking-content {
+    padding:60px 10px;
+    
+  }
+  #insurance-carasoul {
+    width: 80%;
+  }
+  .wrapper i:first-child, wrapper i:last-child {
+    left: -15;
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .carousel img {
+    margin-left: 5px;
+    padding-left: 5px;
+    width: 110px;
+    margin-top: 0px;
   }
 }
 
