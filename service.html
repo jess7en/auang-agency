@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auang Insurance Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- Nav bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNav-bar">
+        <a class="navbar-brand" href="/">
+          <img src="image/aungLogo.svg" width="110px"/>
+        </a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="dropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+          </ul>
+          <!-- <span class="navbar-text">
+            Call Us (123)456-7890
+          </span> -->
+          <div class="getQuote-link">
+            <a href="/getQuoteForm.html">Get Quote</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Banner-->
+    
+      <div id="service-banner">
+        <div id="banner-desc">
+          <h2>Our Services</h2>
+          <p>Your protection is our priority. We offer a wide range of insurance
+            services to give you confidence and security.  
+            <!-- <div id="banner-btns">
+              <div class="getQuote-link">
+                <a href="/getQuoteForm.html">Get Quote</a>
+              </div>
+              <div class="call-us"><a href="tel:+11234567890">Call Us</a></div>
+            <div class="call-us-option1"><a href="tel:+11234567890">Call Us 123-456-7890</a></div>
+            </div>   -->
+        </div>
+      </div>
+    
+    <div id="pills-option-btn">
+      <button id="home-btn" class="pill-btn">Home</button>
+      <button id="auto-btn" class="pill-btn">Auto</button>
+      <button id="business-btn" class="pill-btn">Business</button>
+    </div>
+    <div id="insurance-detail">
+      <div id="home-insurance-detail">
+        <div class="service-block-title">
+          <h4>Home Insurance: Protect Your Dream Home </h4>
+          <p>Covers damage or loss to a person’s home and belongings</p> 
+        </div>
+      
+        <div class="details-rows">
+          <div class="first-row">
+            <div id="home-image-one"></div>
+            <div class="row-one-detail">
+              <h5>Typically includes coverage for:</h5>
+              <p>- Dwelling (the physical structure of the home)</p>
+              <p>- Personal property (furniture, appliances, etc.)</p>
+              <p>- Liability (accidents or injuries on the property)</p>
+              <p>- Additional living expenses (if the home becomes uninhabitable)</p>
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="row-two-detail">
+              <h5>Policyholders can choose from various coverage options, such as:</h5>
+              <p>- Actual cash value (ACV) or replacement cost value (RCV)</p>
+              <p>- Special coverage for valuable items (e.g., jewelry, artwork)</p>
+              <p>- Endorsements for specific perils (e.g., flood, earthquake)
+            </div>
+            <div id="home-image-two"></div>
+          </div>
+        </div>
+            
+      </div>
+      <div id="auto-insurance-detail">
+        <p>Auto Insurance: Drive with Confidence · Covers damage or loss to a vehicle and protects the driver and passengers · Typically includes coverage for: - Collision (accidents with other vehicles or objects) - Comprehensive (non-collision events, such as theft or vandalism) - Liability (bodily injury or property damage to others) - Personal injury protection (PIP) or medical payments - Uninsured/underinsured motorist coverage · Policyholders can choose from various coverage options, such as: - Different levels of liability coverage - Special coverage for roadside assistance or rental cars</p>
+      </div>
+      <div id="business-insurance-detail">
+        <p>Business Insurance: Protect Your Business and Assets · Covers damage or loss to a business and its assets · Typically includes coverage for: - Property (buildings, equipment, inventory, etc.) - Liability (accidents or injuries on the business premises) - Business interruption (loss of income due to business closure) - Workers’ compensation (injuries or illnesses suffered by employees) - Cyber insurance (data breaches or cyber attacks) · Policyholders can choose from various coverage options, such as: - Different levels of liability coverage - Special coverage for specific industries or risks (e.g., product liability)</p>
+      </div>
+
+    </div>
+
+
+   <!-- footer -->
+   <footer>
+    <div class="container">
+
+      <span class="copyright">
+        <a href="tel:+11234567890">(123) 456-7890</a> | 
+        <a href="mailto:myemail.com" target="_blank">email@myemail.com</a>
+      </span> 
+      <div>Copyright © <span id="year"> </span> - Aung Insurance Agency. All rights reserved</div>
+      
+  </div>
+
+   </footer>
+
+  </body>
+  </body>
+</html>

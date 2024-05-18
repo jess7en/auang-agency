@@ -8,34 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
+    <script src="carousel.js" defer></script>
   </head>
   <body>
     <div id="wrapper">
+
       <!-- Nav bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Auang Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNav-bar">
+        <a class="navbar-brand" href="/">
+          <img src="image/aungLogo.svg" width="110px"/>
+        </a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="dropdown">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
+              <a class="nav-link" href="/service.html">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
           </ul>
           <!-- <span class="navbar-text">
             Call Us (123)456-7890
           </span> -->
           <div class="getQuote-link">
-            <a>Get Quote</a>
+            <a href="/getQuoteForm.html">Get Quote</a>
           </div>
         </div>
       </nav>
@@ -49,27 +59,38 @@
             and optimal coverage options from a range of top-rated insurance 
             providers.</p>
             <div id="banner-btns">
-              <div class="getQuote-link">
-                <a>Get Quote</a>
+              <!-- <div class="getQuote-link">
+                <a href="/getQuoteForm.html">Get Quote</a>
               </div>
-              <div class="call-us"><a>Call Us</a></div>
+              <div class="call-us"><a href="tel:+11234567890">Call Us</a></div> -->
+              <div class="call-us-option1"><a href="tel:+11234567890">Call Us 123-456-7890</a></div>
             </div>  
         </div>
       </div>
     </div> 
     <!-- Service  -->
     <div id="services-type-block">
+
       <div class="insurance-type">
         <img src="image/property.png" alt="home insurance"></img>
         <p>Home Insurance</p>
+        <div class="learn-more-btn">
+          <a href="#">Learn More</a>
+        </div>
       </div>
       <div class="insurance-type">
         <img src="image/car1.png" alt="car insurance"></img>
         <p>Auto Insurance</p>
+        <div class="learn-more-btn">
+          <a href="#">Learn More</a>
+        </div>
       </div>
       <div class="insurance-type">
         <img src="image/building1.png" alt="business insurance"></img>
         <p>Business Insurance</p>
+        <div class="learn-more-btn">
+          <a href="#">Learn More</a>
+        </div>
       </div>
     </div>
    <!--random content-->
@@ -107,6 +128,44 @@
         <i id="right" class="fa-solid fa-angle-right"></i>
       </div>
     </div>
+   <!-- why choose independent agency? -->
+   <div id="why-choose">
+    <div id="why-choose-img">
+      <!-- <img src="image/whyChoose.jpg"/> -->
+    </div>
+    <div id="whyChoose-desc">
+      <h2>Why should you trust an Independent Insurance agent with your insurance needs?</h2>
+      <p>
+        Independent agents have the advantage of representing multiple insurance companies, 
+        enabling them to meticulously select the most suitable 
+        coverage at the best price for their clients. In contrast, 
+        captive agents are bound to a single insurer, limiting their ability to offer diverse 
+        options and competitive rates.
+      </p>
+      <!-- <div id="banner-btns">
+        <div class="getQuote-link">
+          <a href="/getQuoteForm.html">Get Quote</a>
+        </div>
+        <div class="call-us"><a>Call Us</a></div>
+      </div>  -->
+    </div>
+   
+   </div>
+
+   <!-- footer -->
+   <footer>
+    <div class="container">
+
+      <span class="copyright">
+        <a href="tel:+11234567890">(123) 456-7890</a> | 
+        <a href="mailto:myemail.com" target="_blank">email@myemail.com</a>
+      </span> 
+      <div>Copyright © <span id="year"> </span> - Aung Insurance Agency. All rights reserved</div>
+      
+  </div>
+
+   </footer>
+
   </body>
   </body>
 </html>
