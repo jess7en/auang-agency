@@ -101,19 +101,23 @@ nav {
     display: flex;
     
 }
+#moble-burger-getquote {
+  display: flex;
+}
 .call-us {
+    margin-top: 10px;
     margin-left: 10px;
-    border: 2px solid #ffcb6b;
+    border: 1px solid #ffcb6b;
     padding:7px 23px;
     cursor: pointer;
     /* color: #282D51; #ffcb6b*/
-    color: #fff;
-    background-color: #ffcb6b; 
+    color: #4b485f;
+    background-color: #f5ad1d;
     font-weight: 100;
-    border-radius: 5px;
+    
 }
 .call-us a {
-  color: #fff !important;
+  color: #4b485f !important;
   text-decoration: none !important;
 }
 .call-us:hover {
@@ -128,7 +132,7 @@ nav {
   color:#ffcb6b !important;
 }
 
-.getQuote-link {
+.getQuote-link, .getQuote-link-mobile {
     padding:8px 23px;
     /* background-color:#FACE7D; */
     background-color: #1464AC;
@@ -138,11 +142,11 @@ nav {
     
 }
 
-.getQuote-link a {
+.getQuote-link a, .getQuote-link-mobile a {
   text-decoration: none !important;
   color: #fff;
 }
-.getQuote-link a:hover {
+.getQuote-link a:hover ,.getQuote-link-mobile a:hover{
     text-decoration: none !important;
     color: #F8F9FA !important
 }
@@ -325,7 +329,7 @@ nav {
   margin-left: 0px;
 }
 #quote-form-container{
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   padding-top: 150px;
 }
@@ -344,7 +348,7 @@ nav {
   padding-bottom: 10px;
   border-radius: 168px;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 140px;
   display: flex;
   justify-content: space-around;
 
@@ -384,6 +388,34 @@ nav {
 #home-image-two {
   width: 50%;
   background-image: url("image/houseRowTwo.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+#auto-image-one {
+  width: 50%;
+  background-image: url("image/autoRowOne.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+#auto-image-two {
+  width: 50%;
+  background-image: url("image/autoRowTwo.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+#commercial-image-one {
+  width: 50%;
+  background-image: url("image/commercialRowOne.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+#commercial-image-two {
+  width: 50%;
+  background-image: url("image/commercialRowTwo.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -468,6 +500,25 @@ footer {
     width: 100%;
     margin-left: 0px;
   }
+  .first-row, .second-row {
+    display: flex;
+    flex-direction: column;
+  }
+  #home-image-one, #home-image-two,
+  #auto-image-one, #auto-image-two,
+  #commercial-image-one, #commercial-image-two {
+    width: 100%;
+    height: 350px;
+  }
+  .row-one-detail, .row-two-detail {
+    width: 100%;
+  }
+  .row-one-detail {
+    margin-left: 0px;
+  }
+  .row-two-detail {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -514,6 +565,26 @@ footer {
   }
 
 }
+
+@media screen and (max-width: 360px) {
+  .row-one-detail, .row-two-detail {
+    padding: 30px;
+  }
+  .service-block-title {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #pills-option-btn {
+    border-radius: 120px;
+    margin-left:3px;
+    margin-right: 3px;
+  }
+  .pill-btn {
+    font-size: 14px;
+    padding: 4px 20px;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .carousel img {
     margin-left: 5px;
