@@ -1,16 +1,15 @@
 
 const getYear = () => {
-    console.log('called')
     const yearSpan = document.getElementById('year');
     const currentYear = new Date().getFullYear();
     if (yearSpan) {
       yearSpan.textContent = currentYear;
     }
 }
-// footer date
+// Footer date
 document.addEventListener("DOMContentLoaded", getYear)
 
-//services
+// Pill buttons for service page.
 const homeBlock = document.getElementById("home-insurance-detail");
 const autoBlock = document.getElementById("auto-insurance-detail");
 const businessBlock = document.getElementById("business-insurance-detail")
