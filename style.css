@@ -142,7 +142,7 @@ justify-content: space-between;
   position: relative;
   right: 37%;
   width: 125%;
-  background-image:url('image/mountains.jpg');
+  background-image:url('image/whyChooseUs.jpg');
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -169,7 +169,7 @@ justify-content: space-between;
 #about-image {
   width: 50%;
   border-radius: 20px;
-  background-image:url('image/mountains.jpg');
+  background-image:url('image/aboutUs.jpg');
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -502,6 +502,10 @@ footer {
   text-align: center;
   padding: 20px 0px;
   font-size: 15px;
+}
+#office-hours {
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 .copyright a {
   text-decoration: none !important;
