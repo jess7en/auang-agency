@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", getYear)
 
 // Pill buttons for service page.
 const currentPage = window.location.pathname;
-console.log('test', currentPage)
+
 if(currentPage.includes("service.html")) {
     const homeBlock = document.getElementById("home-insurance-detail");
     const autoBlock = document.getElementById("auto-insurance-detail");
